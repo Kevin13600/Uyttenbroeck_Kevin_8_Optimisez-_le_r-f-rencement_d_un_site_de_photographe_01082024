@@ -74,6 +74,7 @@ Optimisations apportées au fichier index.html :
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Utilisation de la technique de chargement asynchrone pour les feuilles de style CSS avec rel="preload" et onload, ce qui réduit le blocage du rendu.
+
 Explications :
 
 1. rel="preload" : Indique au navigateur de commencer à charger le fichier CSS immédiatement, mais sans bloquer le rendu de la page.
@@ -82,15 +83,12 @@ Explications :
 4. La balise <noscript> : Fournit une solution de repli pour les utilisateurs qui ont désactivé JavaScript. Elle assure que les styles seront toujours chargés, même si le chargement asynchrone ne fonctionne pas.
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
+Ajout de l'attribut loading="lazy" sur les photos qui n'apparaissent pas en première pour un chargement de page optimal. 
 Minification des noms de fichiers CSS et JS (ex: bootstrap.min.css, style.min.css).
 Ajout des attributs width et height à toutes les images pour éviter les changements de mise en page importants.
 Restructuration du HTML avec des balises sémantiques (<header>, <main>, <section>).
 Remplacement de certains <h3> par <h2> pour une meilleure hiérarchie des titres.
 Ajout de l'attribut defer aux balises <script> pour différer leur chargement.
-Mise à jour de jQuery vers une version plus récente (3.6.0).
-Suppression du contenu de la galerie dans le HTML. Les images seront chargées dynamiquement par JavaScript pour réduire la taille du DOM initial.
 Ajout des attributs required aux champs du formulaire de contact.
 Ajout de l'attribut rel="noopener noreferrer" au lien Instagram pour des raisons de sécurité.
 
@@ -109,8 +107,10 @@ Etape 4: Optimisation SEO
 
 
 Ajout d'une balise <title> et d'une meta description pour améliorer le SEO.
-
-
+Ajout de l'attribut "meta description"
+Ajout de l'attribut [alt] sur les images
+Ajout des meta tag social media
 Etape 6: Optimisation Accessibilité
 
 Ajout de l'attribut lang="fr" à la balise <html> pour spécifier la langue du document.
+Constraste ajusté

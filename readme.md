@@ -102,6 +102,7 @@ Remplacement de certaines valeurs spécifiques par des valeurs relatives (ex: em
 Suppression des commentaires inutiles.
 Optimisation de l'ordre des déclarations pour une meilleure lisibilité et maintenance.
 
+-------------------------------------------------------------------------------------------
 
 Etape 4: Optimisation SEO 
 
@@ -110,6 +111,9 @@ Ajout d'une balise <title> et d'une meta description pour améliorer le SEO.
 Ajout de l'attribut "meta description"
 Ajout de l'attribut [alt] sur les images
 Ajout des meta tag social media
+
+------------------------------------------------------------------------------------------
+
 Etape 6: Optimisation Accessibilité
 
 Ajout de l'attribut lang="fr" à la balise <html> pour spécifier la langue du document.

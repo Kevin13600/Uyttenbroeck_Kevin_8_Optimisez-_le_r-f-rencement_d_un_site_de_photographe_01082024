@@ -6058,6 +6058,7 @@ textarea.form-control-lg {
   border: 0;
   opacity: 0.5;
   transition: opacity 0.15s ease;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.9));
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
@@ -6071,7 +6072,7 @@ textarea.form-control-lg {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .carousel-control-prev {

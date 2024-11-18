@@ -1,120 +1,61 @@
-Etape 1 : Prenez en main le code source
+Nina Carducci - Optimisation SEO
+Structure du projet
+Copynina-carducci/
+│
+├── assets/
+│   ├── bootstrap/
+│   ├── images/
+│   ├── maugallery.js
+│   ├── scripts.js
+│   ├── style.css
+│   └── style.min.css
+├── index.html
+└── README.md
+Optimisations réalisées
+Performance
 
-code récupéré.
-Prise en compte de l'enoncé.
-Première analyse du code avec Lighthouse.
+Optimisation des images (compression, formats modernes)
+Minification CSS/JS
+Chargement différé des images
+Cache optimisé
 
----------------------------------------------------------------------------
+SEO
 
-Etape 2: Listez les optimisations qui peuvent être realisées
+Balises meta optimisées
+Structure HTML sémantique
+Schema.org pour référencement local
+Metas réseaux sociaux (OpenGraph, Twitter Cards)
 
-Performances:
+Accessibilité
 
-Fichiers JavaScript (scripts.js, bootstrap.bundle.js, maugallery.js) :
+Contraste des couleurs amélioré
+Textes alternatifs ajoutés
+Structure de navigation optimisée
+Labels et ARIA ajoutés
 
-Réduisez les ressources JavaScript inutilisées
-Réduisez la taille des ressources JavaScript
-Évitez de créer des chaînes de requêtes critiques
-Réduire le travail du thread principal
-Évitez les tâches longues dans le thread principal
+Résultats
 
-Fichiers CSS (style.css, bootstrap.css) :
+Performance Lighthouse : ≥ 90%
+SEO Lighthouse : ≥ 90%
+Accessibilité Lighthouse : ≥ 90%
+Wave : 0 erreur
 
-Réduisez la taille des ressources CSS
-Réduisez les ressources CSS inutilisées
+Installation
 
-Fichiers images (dans le dossier images) :
+Cloner le repository
 
-Dimensionnez correctement les images
-Encodez les images de manière efficace
-Diffusez des images aux formats nouvelle génération
-Les éléments d'image ne possèdent pas de width ni de height explicites
+bashCopygit clone https://github.com/[username]/nina-carducci.git
 
-index.html :
+Ouvrir index.html dans un navigateur
 
-Éliminez les ressources qui bloquent le rendu
-Évitez une taille excessive de DOM
-Évitez les changements de mise en page importants
-Les éléments d'image ne possèdent pas de width ni de height explicites
+Validation
 
-Configuration du serveur :
+Google Rich Snippets validé
+Lighthouse Desktop validé
+Wave validé
 
-Diffusez des éléments statiques grâce à des règles de cache efficaces
-Le temps de réponse initial du serveur était court
+Contact Photographe
 
-Général (peut impliquer plusieurs fichiers) :
-
-Évitez d'énormes charges utiles de réseau
-Réduire au maximum l'utilisation de code tiers
-
-
-Accessibilité : 
-
-
-Des éléments d'image n'ont pas d'attribut [alt]
-Le document ne contient pas d'élément <title>
-Les éléments de formulaire ne sont pas associés à des libellés
-Les liens n'ont pas de nom visible
-Les couleurs d'arrière-plan et de premier plan ne sont pas suffisamment contrastées
-L'élément <html> n'a pas d'attribut [lang]
-Les éléments d'en-tête ne sont pas classés séquentiellement par ordre décroissant
-
-SEO: 
-
-
-Le document ne contient pas d'élément <title>
-Le document ne contient pas d'attribut "meta description"
-Des éléments d'image n'ont pas d'attribut [alt]
-
--------------------------------------------------------------------------------------------
-
-Etape 3: Optimisation performance
-
-Optimisations apportées au fichier index.html :
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-Utilisation de la technique de chargement asynchrone pour les feuilles de style CSS avec rel="preload" et onload, ce qui réduit le blocage du rendu.
-
-Explications :
-
-1. rel="preload" : Indique au navigateur de commencer à charger le fichier CSS immédiatement, mais sans bloquer le rendu de la page.
-2. as="style" : Spécifie que la ressource préchargée est une feuille de style.
-3. onload="this.onload=null;this.rel='stylesheet'" : Une fois le fichier CSS chargé, cette partie du code change dynamiquement l'attribut rel de "preload" à "stylesheet", appliquant ainsi les styles à la page.
-4. La balise <noscript> : Fournit une solution de repli pour les utilisateurs qui ont désactivé JavaScript. Elle assure que les styles seront toujours chargés, même si le chargement asynchrone ne fonctionne pas.
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-Ajout de l'attribut loading="lazy" sur les photos qui n'apparaissent pas en première pour un chargement de page optimal. 
-Minification des noms de fichiers CSS et JS (ex: bootstrap.min.css, style.min.css).
-Ajout des attributs width et height à toutes les images pour éviter les changements de mise en page importants.
-Restructuration du HTML avec des balises sémantiques (<header>, <main>, <section>).
-Remplacement de certains <h3> par <h2> pour une meilleure hiérarchie des titres.
-Ajout de l'attribut defer aux balises <script> pour différer leur chargement.
-Ajout des attributs required aux champs du formulaire de contact.
-Ajout de l'attribut rel="noopener noreferrer" au lien Instagram pour des raisons de sécurité.
-
-optimisations apportées au fichier CSS :
-
-Regroupement des styles similaires pour réduire la duplication.
-Suppression des propriétés redondantes ou inutiles.
-Utilisation de sélecteurs plus efficaces.
-Simplification des media queries en regroupant les styles communs.
-Remplacement de certaines valeurs spécifiques par des valeurs relatives (ex: em au lieu de px) pour une meilleure adaptabilité.
-Suppression des commentaires inutiles.
-Optimisation de l'ordre des déclarations pour une meilleure lisibilité et maintenance.
-
--------------------------------------------------------------------------------------------
-
-Etape 4: Optimisation SEO 
-
-
-Ajout d'une balise <title> et d'une meta description pour améliorer le SEO.
-Ajout de l'attribut "meta description"
-Ajout de l'attribut [alt] sur les images
-Ajout des meta tag social media
-
-------------------------------------------------------------------------------------------
-
-Etape 6: Optimisation Accessibilité
-
-Ajout de l'attribut lang="fr" à la balise <html> pour spécifier la langue du document.
-Constraste ajusté
+Adresse : 68 avenue Alsace-Lorraine, 33200 Bordeaux
+Téléphone : 05 56 67 78 89
+Horaires : Lundi-Vendredi, 10h-19h
